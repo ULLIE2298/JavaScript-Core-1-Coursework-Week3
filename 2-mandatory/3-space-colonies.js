@@ -15,7 +15,11 @@
   
 */
 
-function colonisers() {}
+function colonizers(num) {
+  const Letter = "A";
+   const word = "family";
+   return num.filter(item => item[0] === Letter && item.includes(word));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -49,7 +53,7 @@ function test(test_name, actual, expected) {
   console.log(`${test_name}: ${status}`);
 }
 
-test("colonisers function works", colonisers(voyagers), [
+test("colonisers function works", colonizers(voyagers), [
   "Adam family",
   "Avery family",
   "Archer family",

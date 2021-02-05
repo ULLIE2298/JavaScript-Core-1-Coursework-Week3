@@ -11,7 +11,10 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(arr) {
+  var convert = arr.map(num => {return parseFloat(num)});
+  return convert.find(num => num > 19.5 && num < 23.5) + "%";
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
